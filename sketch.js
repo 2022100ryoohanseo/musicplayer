@@ -3,10 +3,9 @@ let button;
 
 function setup()
 {
-    createCanvas(200,200);
-soundFormats('mp3', 'ogg');
+    createCanvas(640,480);
 mySound=loadSound('lemon', loadMusic);
-button = crateButton('play');
+button = createButton('play');
 button.mousePressed(togglePlaying);
 background(51);
 //mySound.play();
@@ -30,6 +29,6 @@ function loadMusic(){
 
 function draw(){
     fill(255,0,0);
-    ellipse();
+    ellipse(50,50,100,100);
 
 }
